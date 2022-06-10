@@ -7,4 +7,10 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+count = int(input("n :"))
+if count % 10 == 1:
+    print(count, " корова")
+elif 1 < count % 10 < 5:
+    print(count, " коровы")
+else:
+    print(count, " коров")
