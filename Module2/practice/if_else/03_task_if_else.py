@@ -1,5 +1,14 @@
 # Дан треугольник со сторонами a, b и c. Определите, является ли он равнобедренным.
 # Формат входных данных: дано три натуральных числа. Гарантируется, что отрезки с данными длинами образуют треугольник.
 # Формат выходных данных: Выведите «YES», если треугольник равнобедренный, и «NO» в противном случае.
-
-# TODO: your code here
+welcome_msg_a = "Введите число a: "
+welcome_msg_b = "Введите число b: "
+welcome_msg_c = "Введите число c: "
+a = int(input(welcome_msg_a))
+b = int(input(welcome_msg_b))
+c = int(input(welcome_msg_c))
+if a == b or a == c or b == c:
+    answer = "YES"
+else:
+    answer = "NO"
+print(answer)
