@@ -6,5 +6,13 @@
 # Формат выходных данных: Выведите количество дней в данном году.
 
 year = int(input("Год: "))
-
-# TODO: your code here
+answer_y = "В году 366 дней"
+answer_n = "В году 365 дней"
+if year % 400 == 0:
+    print(answer_y)
+elif year % 100 == 0:
+    print(answer_n)
+elif year % 4 == 0:
+    print(answer_y)
+else:
+    print(answer_n)
