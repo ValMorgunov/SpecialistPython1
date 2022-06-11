@@ -16,7 +16,21 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+num = int(input("Введите номер числа фибоначи: "))
+count = 1
+buff = 0
+sum_n = 0
+sum = 0
+while count < num:
+    if sum == 0:
+        sum += 1
+        count += 1
+    else:
+        buff=sum+sum_n
+        sum_n = sum
+        sum=buff
+        count += 1
+print(sum)
 ```
 
 ### Данные для самопроверки
