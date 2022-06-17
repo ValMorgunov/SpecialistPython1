@@ -28,7 +28,20 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+n = int(input("n :"))
+i = 0
+row = ""
+while i < n:
+    i += 1
+    j = 0
+    while j < n:
+        j += 1
+        if j * i < 10:
+            row += "  " + str(j * i)
+        else:
+            row += " " + str(j * i)
+    print(row)
+    row = ""
 ```
 
 ---
