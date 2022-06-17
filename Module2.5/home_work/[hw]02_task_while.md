@@ -18,8 +18,14 @@
 ### Решение задачи
 
 ```python
+# Очень понравилось это решать)
 a = int(input("a: "))
 b = int(input("b: "))
-
-# TODO: you code here...
+sum = a + b
+magic = 4  # Целое меньше 5
+b = int((a + b + abs(a - b)) / 2)
+a = (sum - b + magic) // 5 * 5
+while a <= b:
+    print(a)
+    a += 5
 ```
