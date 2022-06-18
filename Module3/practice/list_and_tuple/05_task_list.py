@@ -4,8 +4,12 @@
 
 # Исходные данные:
 fruits = ["яблоко", "банан", "киви", "арбуз"]
-
-# TODO: your code here
+l = 0
+for fruit in fruits:
+    if l < len(fruit):
+        l = len(fruit)
+for fruit in fruits:
+    print(fruits.index(fruit) + 1, fruit.rjust(l," "))
 
 # Пример вывода:
 # 1. яблоко
