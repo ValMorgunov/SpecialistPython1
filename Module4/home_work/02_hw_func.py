@@ -3,11 +3,17 @@
 # Если отрезков с минимальной длиной несколько - вывести любой
 
 # При решении задачи необходимо использовать функцию расстояния между двумя точками.
+import random
+
 
 def distance(x1, y1, x2, y2):
-    # TODO: тело, которое вы реализовали на практической работе
-    pass
+    return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
 
 
-# TODO: your code here
-print("Самый короткий отрезок:", ...)  # Выводим название отрезка, например “АС”.
+xa, ya, xb, yb, xc, yc = [random.randint(1, 30) for i in range(6)]
+name_min_line = "AB"
+if distance(xa, ya, xb, yb) > distance(xb, yb, xc, yc) < distance(xa, ya, xc, yc):
+    name_min_line = "BC"
+elif distance(xa, ya, xb, yb) > distance(xa, ya, xc, yc):
+    name_min_line = "AC"
+print("Самый короткий отрезок:", name_min_line)  # Выводим название отрезка, например “АС”.
