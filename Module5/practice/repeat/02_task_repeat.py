@@ -4,4 +4,9 @@
 #  Пример палиндрома: 12321
 
 def palindrome(number):
-    pass
+    return str(number) == str(number)[::-1]
+
+
+print(palindrome(157751))
+print(palindrome(157752))
+print(palindrome(000))
